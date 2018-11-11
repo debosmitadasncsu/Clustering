@@ -86,7 +86,7 @@ nrc_positive <- get_sentiments("nrc") %>%
 
 nrc_negative <- get_sentiments("nrc") %>% 
   filter(sentiment == "negative")
-######################################################
+#####################################################
 
 reviews_negative <-  new_reviews %>%
   group_by(listing_id) %>%
